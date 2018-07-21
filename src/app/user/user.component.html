@@ -1,0 +1,10 @@
+<p>
+  user works!
+</p>
+<p *ngFor="let user of users" >{{ user.name }}</p>
+
+<p *ngFor="let user of users"  [appHighlight]="user.status">
+  {{ user.name }}
+  <span class="glyphicon glyphicon-star"  *ngIf=" user.status == 'single' "></span>
+ </p>
+ 
