@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- 
+  title = 'ng-starter'
+ debug(event){
+   let val = event.target.value;
+   console.log(event);
+ }
 }
